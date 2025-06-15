@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internship Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sticky Banner -->
+  <div class="sticky-banner">
+    <a href="#apply">Apply for Internship</a>
+  </div>
+
+  <!-- Hamburger Menu -->
+  <span class="hamburger" onclick="toggleSidebar()">☰</span>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <a href="#apply">Internship Application</a>
+    <a href="#offer">Offer Letter</a>
+    <a href="#verify">Certificate Verification</a>
+    <a href="#team">Join Team</a>
+    <a href="#contact">Contact Info</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <section id="apply"><h2>Internship Application</h2><p>Form section here...</p></section>
+    <section id="offer"><h2>Offer Letter</h2><p>Offer details...</p></section>
+    <section id="verify"><h2>Certificate Verification</h2><p>Verify your certificate here...</p></section>
+    <section id="team"><h2>Join the Team</h2><p>Team joining form...</p></section>
+    <section id="contact"><h2>Contact Information</h2><p>Email, Phone, etc.</p></section>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
+
